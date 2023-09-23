@@ -15,10 +15,10 @@
 2. App architecture:
      1. Using MVVM android architecture pattern
      2. Directories:
-      - Domain: handle retrofit build interceptor as well service interfaces
-      - Data: hande request and response data format
-      - Activities: handle all UI related functionalities
-      - Helper class: contains general function that can be use in all directories and classes
+         - Domain: handle retrofit build interceptor as well service interfaces
+         - Data: hande request and response data format
+         - Activities: handle all UI related functionalities
+         - Helper class: contains general function that can be use in all directories and classes
 
 3. How to install:
      1. Go to this link: https://drive.google.com/file/d/1w_H4_hm0ZDDdim5azxpOVS6Vz9BKVHOn/view?usp=sharing
