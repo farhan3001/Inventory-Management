@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">QTI Test</string>
+    <string name="title">Welcome back!</string>
+    <string name="login">Login</string>
+    <string name="login_instructions">You’ve been missed, Please sign in your account </string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="error_login">Can\'t login, check your email or password and try again</string>
+    <string name="invalid_email_format">Invalid email!</string>
+    <string name="required">This form is required</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_asset">Asset</string>
+    <string name="logout">Logout</string>
+    <string name="test_qti">TEST QTI</string>
+    <string name="status">Status</string>
+    <string name="location">Location</string>
+    <string name="logout_confirm_text">When you want to use this app,you have to relogin, are you sure?</string>
+    <string name="cancel">Cancel</string>
+    <string name="input_asset">Input Asset</string>
+    <string name="edit_asset">Edit Asset</string>
+    <string name="input">Input</string>
+    <string name="fill_this_form_below">Fill this form below</string>
+    <string name="edit_this_form_below">Edit this form below</string>
+    <string name="select_status">Select Status</string>
+    <string name="select_location">Select Location</string>
+    <string name="submit">Submit</string>
+    <string name="data_submitted">Data has been submitted.</string>
+    <string name="data_updated">Data has been updated.</string>
+    <string name="data_deleted">Data has been deleted.</string>
+    <string name="list_asset">List Asset</string>
+    <string name="search_asset">Search asset</string>
+    <string name="asset_name">Asset Name</string>
+    <string name="item_name">Soap</string>
+    <string name="delete">Delete</string>
+    <string name="save_update">Save Update</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="confirm_delete_text">Your action will cause this data permanently deleted. </string>
+
+
+
+
+</resources>

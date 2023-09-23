@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/top"
+        android:layout_alignBottom="@id/top"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/red_hat_display"
+        android:text="@string/test_qti"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/top"
+        android:layout_alignStart="@id/top"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_alignTop="@id/profile_pic"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/profile_pic"
+        android:fontFamily="@font/red_hat_display"
+        android:text="John Doe"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/profile_pic"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/profile_pic"
+        android:fontFamily="@font/red_hat_display"
+        android:text="apaaja@gmail.com"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout"
+        android:layout_width="73dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/title"
+        android:layout_alignTop="@id/name"
+        android:layout_alignEnd="@id/title"
+        android:layout_alignBottom="@id/email"
+        android:background="@drawable/button_primary"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+</RelativeLayout>
