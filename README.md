@@ -26,3 +26,7 @@
      3. Recommended using light mode 
 
 4. Test result: https://docs.google.com/presentation/d/1nbDu9joQKZxaKTSkfHZUL09kPL-2U5Iw2bEv3jDBtmQ/edit?usp=sharing
+
+Figma: https://www.figma.com/file/uFBd9HHrldcYvjHuTYSAoU/Test-Mobile-Dev---QTI?type=design&node-id=3-1523&mode=design&t=YJ46xg7ayYia1y3c-0
+
+API: http://117.54.250.99:28089/docs
