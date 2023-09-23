@@ -4,13 +4,13 @@
    - Minimal SDK 29 (Android 10)
    - Storage capacity: 14Mb
    - Using external lib:
-     A. Retrofit2:
-      - com.squareup.retrofit2:retrofit:2.8.1
-      - com.squareup.retrofit2:converter-gson:2.8.1
-     B. Okhttp3:
-      - com.squareup.okhttp3:logging-interceptor:4.8.1
-     C. Chart:
-      - com.github.PhilJay:MPAndroidChart:v3.1.0
+     - Retrofit2:
+       - com.squareup.retrofit2:retrofit:2.8.1
+       - com.squareup.retrofit2:converter-gson:2.8.1
+     - Okhttp3:
+       - com.squareup.okhttp3:logging-interceptor:4.8.1
+     - Chart:
+       - com.github.PhilJay:MPAndroidChart:v3.1.0
 
 2. App architecture:
      1. Using MVVM android architecture pattern
