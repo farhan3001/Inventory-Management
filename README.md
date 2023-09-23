@@ -13,16 +13,16 @@
       - com.github.PhilJay:MPAndroidChart:v3.1.0
 
 2. App architecture:
-     A. Using MVVM android architecture pattern
-     B. Directories:
+     1. Using MVVM android architecture pattern
+     2. Directories:
       - Domain: handle retrofit build interceptor as well service interfaces
       - Data: hande request and response data format
       - Activities: handle all UI related functionalities
       - Helper class: contains general function that can be use in all directories and classes
 
 3. How to install:
-     A. Go to this link: https://drive.google.com/file/d/1w_H4_hm0ZDDdim5azxpOVS6Vz9BKVHOn/view?usp=sharing
-     B. Install on your device
-     C. Recommended using light mode 
+     1. Go to this link: https://drive.google.com/file/d/1w_H4_hm0ZDDdim5azxpOVS6Vz9BKVHOn/view?usp=sharing
+     2. Install on your device
+     3. Recommended using light mode 
 
 4. Test result: https://docs.google.com/presentation/d/1nbDu9joQKZxaKTSkfHZUL09kPL-2U5Iw2bEv3jDBtmQ/edit?usp=sharing
