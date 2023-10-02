@@ -16,9 +16,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.example.qtitest.R;
 import com.example.qtitest.data.AssetGetResponse;
@@ -40,12 +37,12 @@ public class EditAssetActivity extends AppCompatActivity {
 
     private SharedPreferences sharedPreferencesToken;
 
-    String assetId, assetName, idAssetStatus, idAssetLocation;
+    private String assetId, assetName, idAssetStatus, idAssetLocation;
 
-    String assetsStatus[] = {"Sold", "In Stock", "Expired"};
-    String assetsLocation[] = {"Gudang", "Rak Penjualan"};
+    private String assetsStatus[] = {"Sold", "In Stock", "Expired"};
+    private String assetsLocation[] = {"Gudang", "Rak Penjualan"};
 
-    ArrayAdapter<String> adapterStatusAsset, adapterLocationAsset;
+    private ArrayAdapter<String> adapterStatusAsset, adapterLocationAsset;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

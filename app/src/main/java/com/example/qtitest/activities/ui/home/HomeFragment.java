@@ -41,18 +41,13 @@ import retrofit2.Response;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
-    public SharedPreferences sharedPreferencesToken, sharedPreferencesLog;
-    public String tokenVal;
-
-    public ArrayList barChartAsset, barChartLocation;
-
-    public AppCompatButton cancel, confirm;
-
+    private SharedPreferences sharedPreferencesToken, sharedPreferencesLog;
+    private String tokenVal;
+    private ArrayList barChartAsset, barChartLocation;
+    private AppCompatButton cancel, confirm;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();

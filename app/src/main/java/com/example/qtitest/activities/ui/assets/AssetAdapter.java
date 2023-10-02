@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.qtitest.R;
 import com.example.qtitest.data.AssetItems;
-import com.example.qtitest.data.AssetResponse;
 
 import java.util.ArrayList;
 
@@ -35,21 +34,13 @@ public class AssetAdapter extends RecyclerView.Adapter<AssetAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-//        Log.d("Asset Name", dataArrayList.get(position).getName());
-
-//        Log.d("Asset Items", assetItems.get(1).getName());
-
         holder.textView.setText(dataArrayList.get(position).getName());
 
         holder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 view.getContext().startActivity(new Intent(view.getContext(), EditAssetActivity.class)
                         .putExtra("dataAsset", dataArrayList.get(position)));
-
-
-//                ((Activity)view.getContext()).finish();
             }
         });
     }

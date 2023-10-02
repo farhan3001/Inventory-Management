@@ -42,8 +42,8 @@ import retrofit2.Response;
 
 public class AssetsFragment extends Fragment {
 
-    public SharedPreferences sharedPreferencesToken, sharedPreferencesLog;
-    public String tokenVal;
+    private SharedPreferences sharedPreferencesToken, sharedPreferencesLog;
+    private String tokenVal;
 
     private FragmentAssetsBinding binding;
 
@@ -55,8 +55,7 @@ public class AssetsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        AssetsViewModel assetsViewModel =
-                new ViewModelProvider(this).get(AssetsViewModel.class);
+
 
         binding = FragmentAssetsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();

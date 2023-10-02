@@ -18,7 +18,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.example.qtitest.R;
 import com.example.qtitest.activities.MainActivity;
@@ -35,21 +34,19 @@ public class InputFragment extends Fragment {
 
     private FragmentInputBinding binding;
 
-    public SharedPreferences sharedPreferencesToken;
+    private SharedPreferences sharedPreferencesToken;
 
-    String assetsStatus[] = {"Sold", "In Stock", "Expired"};
-    String assetsLocation[] = {"Gudang", "Rak Penjualan"};
+    private String assetsStatus[] = {"Sold", "In Stock", "Expired"};
+    private String assetsLocation[] = {"Gudang", "Rak Penjualan"};
 
-    ArrayAdapter<String> adapterStatusAsset, adapterLocationAsset;
+    private ArrayAdapter<String> adapterStatusAsset, adapterLocationAsset;
 
-    String idAssetStatus, idAssetLocation;
+    private String idAssetStatus, idAssetLocation;
 
-    public String tokenVal;
+    private String tokenVal;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        InputViewModel dashboardViewModel =
-                new ViewModelProvider(this).get(InputViewModel.class);
 
         binding = FragmentInputBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
