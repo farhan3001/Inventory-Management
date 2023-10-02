@@ -43,8 +43,6 @@ public class InputFragment extends Fragment {
 
     private String idAssetStatus, idAssetLocation;
 
-    private String tokenVal;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 

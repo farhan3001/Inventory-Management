@@ -1,8 +1,7 @@
 package com.example.qtitest.activities.ui.assets;
 
 import static android.content.Context.MODE_PRIVATE;
-
-import static com.example.qtitest.Helper.*;
+import static com.example.qtitest.Helper.containsIgnoreCase;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -21,7 +20,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -43,11 +41,10 @@ import retrofit2.Response;
 public class AssetsFragment extends Fragment {
 
     private SharedPreferences sharedPreferencesToken, sharedPreferencesLog;
-    private String tokenVal;
 
     private FragmentAssetsBinding binding;
 
-    private ArrayList<AssetItems.Result> assetItemsResponse, assetTotal, allAssetSearched;
+    private ArrayList<AssetItems.Result> assetTotal, allAssetSearched;
 
     private int page = 1, limit = 10;
 

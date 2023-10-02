@@ -15,13 +15,7 @@ import com.example.qtitest.activities.ui.assets.AssetsFragment;
 import com.example.qtitest.activities.ui.home.HomeFragment;
 import com.example.qtitest.activities.ui.input.InputFragment;
 import com.example.qtitest.data.LoginResponse;
-import com.example.qtitest.data.RefreshedToken;
 import com.example.qtitest.databinding.ActivityMainBinding;
-import com.example.qtitest.domain.APIClient;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,22 +48,6 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(token)) {
             sharedPreferencesToken.edit().putString("tokenString", token).apply();
         }
-
-//
-//        String data = bundle.getString("data");
-
-//        data = bundle.getSerializable("data");
-//        Log.d("data", data.toString());
-
-//        BottomNavigationView navView = findViewById(R.id.bottomNavigationView);
-//        // Passing each menu ID as a set of Ids because each
-//        // menu should be considered as top level destinations.
-//        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-//                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_assets)
-//                .build();
-//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
-////        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-//        NavigationUI.setupWithNavController(binding.navView, navController);
 
         replaceFragment(new HomeFragment());
         binding.bottomNavigationView.setBackground(null);
